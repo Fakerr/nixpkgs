@@ -1,14 +1,4 @@
-#{ stdenv, fetchFromGitHub, git, gnugrep, less, makeWrapper }:
-{ pkgs ? import <nixpkgs>{} } :
-let 
-  stdenv = pkgs.stdenv;
-  fetchFromGitHub = pkgs.fetchFromGitHub;
-  git = pkgs.git;
-  gnugrep = pkgs.gnugrep;
-  less = pkgs.less; 
-  makeWrapper = pkgs.makeWrapper;
-in
-
+{ stdenv, fetchFromGitHub, git, gnugrep, less, makeWrapper }:
 
 stdenv.mkDerivation rec {
   name = "git-recall-${version}";

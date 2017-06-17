@@ -74,6 +74,8 @@ rec {
 
   git-radar = callPackage ./git-radar { };
 
+  git-recall = callPackage ./git-recall { };
+
   git-recent = callPackage ./git-recent {
     utillinux = if stdenv.isLinux then utillinuxMinimal else null;
   };
